@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="calendar.com.ui.EventEditActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+        <Button
+                android:layout_width="20dp"
+                android:onClick="backAction"
+                android:layout_height="match_parent" android:id="@+id/button4" android:layout_weight="1"
+                android:background="@drawable/back" android:layout_margin="10dp" />
+        <TextView
+                android:layout_width="244dp"
+
+                android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                android:textAlignment="center" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/blue" android:layout_margin="10dp"
+                android:textAllCaps="true"/>
+        <Button
+                android:layout_width="20dp"
+                android:onClick="statAction"
+                android:layout_height="match_parent" android:id="@+id/button5" android:layout_weight="1"
+                android:background="@drawable/stat" android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <EditText
+                android:id="@+id/eventNameET"
+                android:layout_width="224dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:ems="10"
+                android:inputType="text"
+                app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Task:"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/textView" android:layout_marginTop="72dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="180dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/blue"
+                android:background="@null"
+                android:textStyle="bold"
+                android:onClick="saveEventAction"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="152dp" android:id="@+id/save_but" android:layout_marginTop="96dp"
+                app:layout_constraintTop_toBottomOf="@+id/eventDateTV"/>
+        <EditText
+                android:layout_width="168dp"
+                android:layout_height="46dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/eventDateTV"
+                android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/eventNameET"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.51"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

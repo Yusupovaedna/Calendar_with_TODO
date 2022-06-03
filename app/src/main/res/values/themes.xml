@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CalendarAppExample" parent="Theme.AppCompat.Light">
+    </style>
+    <style name="Theme.CalendarAppExample.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.CalendarAppExample.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.CalendarAppExample.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

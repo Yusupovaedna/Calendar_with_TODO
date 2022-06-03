@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="calendar.com.ui.Stat">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+        <Button
+                android:layout_width="20dp"
+                android:onClick="monthAction"
+                android:layout_height="match_parent" android:id="@+id/button4" android:layout_weight="1"
+                android:background="@drawable/calendar" android:layout_margin="10dp" />
+        <TextView
+                android:layout_width="244dp"
+                android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                android:textAlignment="center" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/blue" android:layout_margin="10dp" android:text="statistics"
+                android:textAllCaps="true"/>
+        <Button
+                android:layout_width="20dp"
+                android:onClick="addAction"
+                android:layout_height="match_parent" android:id="@+id/button5" android:layout_weight="1"
+                android:background="@drawable/add_dark" android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="409dp"
+            android:layout_height="678dp" tools:layout_editor_absoluteY="52dp" tools:layout_editor_absoluteX="1dp"
+    >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="146dp" android:layout_marginTop="40dp" android:layout_margin="20dp">
+            <Button
+                    android:text="Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/done" android:layout_weight="1"
+                    android:background="@drawable/done" android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" android:textColor="@color/white" android:textSize="24sp"
+                    android:textStyle="bold"/>
+            <Button
+                    android:text="Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/not_done" android:layout_weight="1"
+                    android:background="@drawable/not_done" android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp" android:textColor="@color/white" android:textSize="24sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+                android:text="Tasks for today"
+                android:layout_width="match_parent"
+                android:layout_height="61dp" android:id="@+id/textView4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textAllCaps="true"
+                android:layout_marginBottom="10dp" android:layout_marginLeft="20dp"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="130dp" android:id="@+id/eventList" android:layout_marginTop="-5dp"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="Tasks for tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="61dp" android:id="@+id/textView6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textAllCaps="true"
+                android:layout_marginBottom="10dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/eventList2" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>
